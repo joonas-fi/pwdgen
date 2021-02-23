@@ -24,13 +24,11 @@ func main() {
 	}
 
 	cmd.Flags().IntVarP(&length, "length", "l", length, "Length of password")
-	// cmd.Flags().StringVarP(&builderName, "builder", "b", builderName, "If specified, runs only one builder instead of all")
-	// cmd.Flags().BoolVarP(&fastbuild, "fast", "f", fastbuild, "Skip non-essential steps (linting, testing etc.)")
 
 	osutil.ExitIfError(cmd.Execute())
 }
 
 func generate(length int) error {
-	_,err:= fmt.Fprintln(os.Stdout, randompassword.Build(randompassword.DefaultAlphabet, length))
+	_, err := fmt.Fprintln(os.Stdout, randompassword.Build(randompassword.DefaultAlphabet, length))
 	return err
 }
