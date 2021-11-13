@@ -1,4 +1,5 @@
 ![Build](https://github.com/joonas-fi/pwdgen/workflows/Build/badge.svg)
+[![DockerHub](https://img.shields.io/docker/pulls/joonas/pwdgen.svg?style=for-the-badge)](https://hub.docker.com/r/joonas/pwdgen/)
 
 Super-simple password generator.
 
